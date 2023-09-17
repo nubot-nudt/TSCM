@@ -20,7 +20,7 @@ self.parser.add_argument('---split', type=str, default='val', help='Split to use
 python main.py --phase=train_tea
 
 # train the student net supervised by the pretrained teacher net
-python main.py --phase=train_stu --resume=[teacher_net_xxx/ckpt_best.pth.tar]
+python main.py --phase=train_stu --resume=[logs/teacher_net_xxx/ckpt_best.pth.tar]
 ```
 ## Evaluate the pretrained models
 In test mode
