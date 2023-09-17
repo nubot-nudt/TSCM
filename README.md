@@ -38,7 +38,7 @@ If this pre-training model doesn't work or you need more pre-training models, pl
 python main.py --phase=test_stu	 --resume=logs/teacher_triplet/ckpt.pth.tar
 ```
 ## Use the pretrained model to PR
-if you want to use the model to place recognition, you can replace the code in find_pair.py with the code in train.py and run the following code.
+if you want to use the model to place recognition, you can replace the code in **find_pair.py** with the code in **trainer.py** and run the following code.
 ```shell
 python main.py --phase=test_stu	 --resume=logs/teacher_triplet/ckpt.pth.tar
 ```
