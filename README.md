@@ -31,7 +31,15 @@ self.parser.add_argument('---split', type=str, default='val', help='Split to use
  ```shell
 self.parser.add_argument('---split', type=str, default='test', help='Split to use', choices=['val', 'test'])
 ```
-You can run [pre-trained models](https://www.dropbox.com/scl/fo/c7why2nf82gn1ffv6dsr7/h?rlkey=7ariswrhfecaezjh0xz40599i&dl=0).The teacher_triplet/ckpt.pth.tar in the code needs to be changed to the appropriate name.If this pre-training model doesn't work or you need more pre-training models, please contact me in Issue.
+You can run [pre-trained models](https://www.dropbox.com/scl/fo/c7why2nf82gn1ffv6dsr7/h?rlkey=7ariswrhfecaezjh0xz40599i&dl=0). The teacher_triplet/ckpt.pth.tar in the code needs to be changed to the appropriate name.
+
+If this pre-training model doesn't work or you need more pre-training models, please contact me in Issue.
 ```shell
 python main.py --phase=test_stu	 --resume=logs/teacher_triplet/ckpt.pth.tar
 ```
+## Use the pretrained model to PR
+if you want to use the model to place recognition, you can replace the code in find_pair.py with the code in train.py and run the following code.
+```shell
+python main.py --phase=test_stu	 --resume=logs/teacher_triplet/ckpt.pth.tar
+```
+
