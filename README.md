@@ -1,7 +1,17 @@
-# TSCM
-This is the code repositary for our ICRA submission: TSCM: A Teacher-Student Model for Vision Place Recognition Using Cross-Metric Knowledge Distillation
+# TSCM: A Teacher-Student Model for Vision Place Recognition Using Cross-Metric Knowledge Distillation
+Our work has been accepted by ICRA2024  :clap: 🎉
 
-Thanks to the open source work of [baseline](https://github.com/ramdrop/stun), the code of TSCM is based on it.
+If you use our code in your work, please star our repo and cite our paper.
+
+```bibtex
+@inproceedings{shen2024icra,
+	title={{TSCM: A Teacher-Student Model for Vision Place Recognition Using Cross-Metric Knowledge Distillation}},
+	author={Shen, Yehui and Liu, Mingmin and Lu, Huimin and Chen, Xieyuanli},
+	booktitle={IEEE International Conference on Robotics and Automation (ICRA)},
+	year={2024}
+}
+```
+
 ## Pittsburgh Dataset
 You can download the pittsburgh dataset on https://www.dropbox.com/s/ynep8wzii1z0r6h/pittsburgh.zip?dl=0
 ## How to use
@@ -43,3 +53,4 @@ if you want to use the model to place recognition, you can replace the code in *
 python main.py --phase=test_stu	 --resume=logs/teacher_triplet/ckpt.pth.tar
 ```
 
+Thanks to the open source work of [baseline](https://github.com/ramdrop/stun), the code of TSCM is based on it.
