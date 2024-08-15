@@ -1,7 +1,7 @@
 # TSCM: A Teacher-Student Model for Vision Place Recognition Using Cross-Metric Knowledge Distillation
 Our work has been accepted by ICRA2024  :clap: 🎉
 
-If you use our code in your work, please star our repo and cite our paper [pdf](https://arxiv.org/pdf/2404.01587).
+If you use our code in your work, please star our repo and cite our paper [[pdf](https://arxiv.org/pdf/2404.01587)].
 
 ```bibtex
 @inproceedings{shen2024icra,
